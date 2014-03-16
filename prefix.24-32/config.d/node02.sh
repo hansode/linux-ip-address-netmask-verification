@@ -21,8 +21,8 @@ function append_networking_param() {
 node=node02
 
 case "${node}" in
-  node01) ip4=18 opposit_ip4=19 ;;
-  node02) ip4=19 opposit_ip4=18 ;;
+  node01) ip4=18 partner_ip4=19 ;;
+  node02) ip4=19 partner_ip4=18 ;;
 esac
 
 mkdir -p /etc/vipple/vip-{up,down}.d
