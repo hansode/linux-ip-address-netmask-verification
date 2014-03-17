@@ -43,6 +43,6 @@ case "${node}" in
     ;;
   node02)
     ping -c 1 -W 3 10.126.5.${partner_ip4}
-    ping -c 1 -W 3 10.126.5.${virtual_ip4} || :
+    ping -c 1 -W 3 10.126.5.${virtual_ip4}
     ;;
 esac
