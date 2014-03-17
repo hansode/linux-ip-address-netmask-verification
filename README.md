@@ -18,8 +18,8 @@ System Configuration Diagram
   |    |  10.126.5.17/:prefix_2nd |
   |    +--------------------------+
   |
-ping 10.126.5.18
-ping 10.126.5.17
+ping 10.126.5.18 # ping1
+ping 10.126.5.17 # ping2
   |
   |    +--------------------------+
   |    |                  (node02)|
@@ -33,12 +33,12 @@ ping 10.126.5.17
 Verification Matrix
 -------------------
 
-| node \ prefix | 1st | 2nd |
-|:--------------|:----|:----|
-| prefix.24-24  |  24 |  24 |
-| prefix.24-32  |  24 |  32 |
-| prefix.32-24  |  32 |  24 |
-| prefix.32-32  |  32 |  32 |
+| node \ prefix | 1st | 2nd | ping1 | ping2 |
+|:--------------|:----|:----|:------|:------|
+| prefix.24-24  |  24 |  24 |   OK  |   OK  |
+| prefix.24-32  |  24 |  32 |   OK  |   OK  |
+| prefix.32-24  |  32 |  24 |   NG  |   NG  |
+| prefix.32-32  |  32 |  32 |   NG  |   NG  |
 
 
 Getting Started
